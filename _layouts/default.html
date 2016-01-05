@@ -14,11 +14,15 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
-	
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/landing-page.css">
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,48 +36,73 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="active navbar-brand" href="/">BioPartsApps</a>
-        </div>
-		
-		<div class="collapse navbar-collapse pull-right">
-		    <ul class="nav navbar-nav">
-		      <li><a href="about.html">About</a></li>
-		    </ul>
-		</div>
-		
-		
-        <!--/.navbar-collapse -->
+      <!-- Navigation -->
+      <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+          <div class="container topnav">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand topnav" href="#">BioPartsApps</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li>
+                          <a href="#about">About</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container -->
+      </nav>
+
+
+      <!-- Header -->
+      <div class="intro-header">
+          <div class="container">
+
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="intro-message">
+                          <h1>BioPartsApps</h1>
+                          <h3>A web-application framework for synthetic biology</h3>
+                          <hr class="intro-divider">
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <!-- /.container -->
+
       </div>
-    </div>
+      <!-- /.intro-header -->
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-		  {{ content }}
-      </div>
+      <!-- Page Content -->
 
-      <hr>
+      {{ content }}
 
+      <!-- Footer -->
       <footer>
-        <p>&copy; BaderLab 2014-2018 - <a href="https://github.com/biopartsapps">GitHub Repository</a> - we proudly run on <a href="http://jekyllrb.com">Jekyll</a>, <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://pages.github.com">GitHub Pages</a></p>
+          <div class="container">
+              <div class="row">
+                      <p>&copy; BaderLab 2014-2018 - <a href="https://github.com/biopartsapps">GitHub Repository</a> - we proudly run on <a href="http://jekyllrb.com">Jekyll</a>, <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://pages.github.com">GitHub Pages</a></p>
+                  </div>
+              </div>
+          </div>
       </footer>
-    </div> <!-- /container -->
 
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+
   </body>
-</html>
 
+</html>
